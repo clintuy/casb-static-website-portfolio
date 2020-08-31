@@ -1,0 +1,448 @@
+/* Import fonts from fonts.css file */
+
+/* CSS Variables */
+@import url(./_variables.css);
+
+/* Global Styling */
+@import url(./_global.css);
+
+
+/* Start Navigation Area */
+.header-area .main-menu .navbar {
+    padding: 0rem 20rem;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+/*----------------------------------------------------*/
+.header-area .main-menu .navbar .navbar-brand img {
+    width: 35px;
+}
+/*----------------------------------------------------*/
+.header-area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 2rem;
+}
+/*----------------------------------------------------*/
+.header-area .main-menu .nav-item .nav-link {
+    font: normal bold 16px/25px var(--roboto);
+    text-transform: uppercase;
+    margin: 1rem 1.5rem;
+    padding: .5rem .1rem;
+    color: var(--text-color-light); 
+}
+/*----------------------------------------------------*/
+.header-area .main-menu .navbar-nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text-color-light);
+    transition: width .3s;
+}
+/*----------------------------------------------------*/
+.header-area .main-menu .navbar-nav a:hover::after {
+    width: 100%;
+}
+
+.header-area .main-menu .navbar-fixed-top.scrolled {
+    background-color: var(--text-color-primary);
+    box-shadow: var(--box-shadow-2);
+    transition: background-color .3s linear;
+  }
+/* End Navigation Area */
+/*----------------------------------------------------*/
+
+/* Start Introduction Area */
+.main-content .introduction-area {
+    padding: 10rem 5rem;
+    min-height: 100vh;
+}
+/*----------------------------------------------------*/
+.main-content .introduction-area .introduction-title {
+    margin-top:30%;
+    color: var(--text-color-light);
+}
+/*----------------------------------------------------*/
+.main-content .introduction-area .introduction-title h1 {
+    font-size: 4rem;
+}
+/*----------------------------------------------------*/
+.main-content .introduction-area .introduction-title h2 {
+    font-size: 2.5rem;
+}
+/* End Introduction Area */
+
+/* Start About Area*/
+.main-content .about-area {
+    padding: 3rem 0 15rem 0;
+    background-color: white;
+}
+
+.main-content .about-area .about-image > img {
+    background-position: center center;
+    margin: 3.3rem 7rem;
+    max-width: 250px;
+}
+.main-content .about-area .about-image {
+    text-align: right;
+}
+.main-content .about-area .about-title {
+
+}
+
+.main-content .about-area .about-title .paragraph {
+    width: 75%;
+}
+
+.main-content .about-area .about-title .languages{
+    padding: 2rem 0;
+}
+/* End About Area*/
+
+/* Start Education Area */
+.main-content .education-area {
+    background-color: white;
+}
+.main-content .education-area .school-logo {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem .7rem 1rem 0;
+    width: 50px;
+}
+.main-content .education-area .school-image {
+    background-image: url("../img/STI_SCHOOL.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-content .education-area .school {
+    margin: 5rem 0rem;
+}
+.main-content .education-area .school-detail {
+    display: inline-block;
+}
+.main-content .education-area .school-detail .school-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.main-content .education-area .school-detail .course-name {
+    font-size: .9rem;
+    color: var(--text-color-secondary);
+}
+.main-content .education-area .school-detail .school-year {
+    color: var(--text-color-secondary);
+}
+/* End Education Area*/
+
+/* Start Experience Area*/
+.main-content .experience-area {
+    background: url("../img/CREAM_PIXELS.png") repeat;
+    padding: 3rem 0;
+}
+.main-content .experience-area .title-text{
+    text-align: center;
+}
+
+.main-content .experience-area .w-box {
+    margin: 5rem 0rem;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+.main-content .experience-area .w-box .company-detail{
+    padding: 2rem 0 0 0;
+}
+.main-content .experience-area .w-box .company-detail .company-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-content .experience-area .w-box .company-detail .position{
+    font-size: 1rem;
+}
+.main-content .experience-area .w-box .company-detail .p-languages {
+    font-size: .6rem;
+}
+.main-content .experience-area .w-box .company-detail .p-languages > span {
+    display: inline-block;
+    margin: .3rem .3rem .3rem 0;
+    padding: .4rem .5rem;
+    border: 1px solid var(--text-color-primary);
+}
+.main-content .experience-area .w-box .company-detail .contract {
+    color: var(--text-color-secondary);
+}
+/* End Experience Area */
+
+/* Start Featured Projects Area */
+.main-content .f-project-area {
+    color: var(--text-color-light);
+    padding: 5rem 10rem;
+}
+.main-content .f-project-area .title-text {
+    
+}
+.main-content .f-project-area .featured-projects {
+    margin: 5rem 0rem;
+}
+.main-content .f-project-area .featured-projects .item{
+    box-shadow: var(--box-shadow-1);
+    margin-bottom: 1rem;
+}
+
+.main-content .f-project-area .featured-projects .project-bg {
+    background: url("../img/CREAM_PIXELS.png") repeat;
+}
+.main-content .f-project-area .project-1 {
+    background: url("../img/RSK_WEBSITE.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+}
+.main-content .f-project-area .project-2 {
+    background: url("../img/CSI_WEBSITE.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+}
+.main-content .f-project-area .project-3 {
+    background: url("../img/AMS_WEBSITE.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+}
+.main-content .f-project-area .project-image > img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-content .f-project-area .project-info {
+    background: url("../img/CREAM_PIXELS.png") repeat;
+    color: var(--text-color-primary);
+    padding: 1rem;
+    min-height: 30vh;
+}
+.main-content .f-project-area .project-info .project-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* End Featured Projects Area */
+
+/* Start Porfolio Area */
+.main-content .portfolio-area {
+    background: url("../img/CREAM_PIXELS.png") repeat;
+    color: white;
+    padding: 3rem 0;
+}
+.main-content .portfolio-area .title-text {
+    color: var(--text-color-primary);
+}
+.main-content .portfolio-area .grid-images {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+}
+.main-content .portfolio-area .grid-images .tile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content .portfolio-area .grid-images .tile {
+    box-shadow: var(--box-shadow);
+}
+
+.main-content .portfolio-area .grid-images .tile::before {
+    content: '';
+    display: block;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+}
+.main-content .portfolio-area .grid-images .tile:hover::before {
+    opacity: 0.2;
+}
+
+.main-content .portfolio-area .grid-images .tile:nth-child(1){
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.main-content .portfolio-area .grid-images .tile:nth-child(2),
+.main-content .portfolio-area .grid-images .tile:nth-child(3){
+    grid-column: span 3;
+}
+
+.main-content .portfolio-area .grid-images .tile:nth-child(4) {
+    grid-column: span 6;
+}
+/* End Porfolio Area */
+
+/* Skills Area */
+.main-content .skill-area {
+    color: var(--text-color-light);
+    padding: 5rem 0;
+}
+.main-content .skill-area .bar-1 .skill-title {
+    font-size: 1rem;
+    color: var(--text-color-light);
+}
+.main-content .skill-area .bar-1 .bar {
+    width: 100%;
+    height: 20px;
+    background: var(--text-color-secondary);
+    border-radius: 50px;
+    position: relative;
+    transition: all 2s linear;
+}
+  
+.main-content .skill-area .bar-1 {
+    width: 100%;
+}
+  
+.main-content .skill-area .bar-1 .bar .bar-inner {
+    width: 0;
+    height: 20px;
+    line-height: 35px;
+    background: var(--text-color-light);
+    border-radius: 50px;
+}
+  
+.main-content .skill-area .bar-percent {
+    color: var(--text-color-primary);
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 14px;
+}
+.main-content .skill-area .p-languages {
+    font-size: 1rem;
+}
+.main-content .skill-area .p-languages > span {
+    display: inline-block;
+    margin: .3rem .3rem .3rem 0;
+    padding: .4rem .5rem;
+    border: 1px solid var(--text-color-light);
+}
+/* End Skills Area*/
+
+
+
+/* Start Contact Area */
+.main-content .contact-area {
+    background: url("../img/CREAM_PIXELS.png") repeat;
+    color: var(--text-color-primary);
+    padding: 3rem 0;
+}
+/* End Contact Area */
+
+/* Start Footer Area */
+.main-content .footer-area {
+    text-align: center;
+    font-size: .8rem;
+    color: var(--text-color-light);
+    border-top: 1px solid rgba(66, 66, 66, 0.5);
+    padding: 1rem;
+    
+}
+/* End Footer Area */
+#submitForm {
+    color:white;
+}
+
+#submitForm:hover {
+    color:var(--text-color-primary);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+    .header-area .main-menu .navbar {
+        padding: 1rem;
+        position: relative;
+    }
+    .header-area .main-menu .navbar .navbar-brand {
+        padding: 0;
+    }
+    .header-area .main-menu .nav-item .nav-link {
+        padding: 0;
+        margin: .5rem 0;
+        text-align: center;
+    }
+    .main-content .introduction-area {
+        padding: 1rem;
+    }
+    .main-content .introduction-area .introduction-title {
+        margin-top:50%;
+    }
+    .main-content .introduction-area .introduction-title h1 {
+        font-size: 1.3rem;
+    }
+    .main-content .introduction-area .introduction-title h2 {
+        font-size: 1rem;
+    }
+    .main-content .about-area {
+        padding: 10rem 0;
+    }
+    .main-content .about-area .about-image > img {
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .main-content .education-area .school-image {
+        background-position: right top;
+        height: 500px;
+    }
+
+    .main-content .experience-area {
+        padding: 5rem 0;
+    }
+
+    .main-content .experience-area .w-box {
+        margin: 1rem 0rem;
+    }
+    .main-content .f-project-area {
+        padding: 1rem;
+    }
+    .main-content .f-project-area .project-image {
+        height: 200px;
+    }
+    .main-content .portfolio-area {
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 844px) {
+    .main-content .about-area .about-image > img {
+        margin: 0;
+    
+    }
+    .main-content .about-area .about-image {
+        text-align: center;
+    }
+    .main-content .about-area .about-title .paragraph {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .main-content .portfolio-area .grid-images{
+        display: block;
+    }
+    .main-content .portfolio-area .grid-images .tile{
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,50 @@
+/* Global Classes */
+
+.title-text {
+    font-weight: bold;
+}
+/*----------------------------------------------------*/
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 2px solid var(--text-color-primary);
+    border-radius: 0;
+}
+
+.button.primary-button {
+    background-color: var(--text-color-primary);
+    background-clip: padding-box;
+    color: white;
+    transition: background-color .3s ease;
+}
+
+.button.primary-button:hover {
+    background-color: white;
+    background-clip: padding-box;
+    border-radius: 0;
+    border: 2px solid var(--text-color-primary);
+    color: var(--text-color-primary)
+}
+
+.button.primary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background-color: var(--text-color-primary);
+    content: '';
+    z-index: -1;
+}
+
+p.para {
+    color: var(--text-color-primary);
+    font: normal 500 16px/25px var(--roboto);
+}

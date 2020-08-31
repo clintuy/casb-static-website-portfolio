@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: var(--roboto);
+    background: url("../img/BINDING_DARK.png") repeat;
+}
+
+/* CSS Variables */
+
+
+:root {
+
+    /* Colors */
+    --primary-color: #50DCC5;
+    --title-color: #1f1f1f;
+    --text-color-primary: #1f1f1f;
+    --text-color-light: #F0F0F0;
+    --text-color-secondary: #8A8A8A;
+    --border-color: #1f1f1f;
+    --box-shadow: 0 2px 10px 0 rgba(139, 139, 139, 0.5);
+    --box-shadow-1: 0 0 5px 0 rgba(139, 139, 139, 0.5);
+    --box-shadow-2: 0 0 5px 0 rgba(29, 29, 29, 1);
+    --bg-light: #F0F0F0;
+
+    /* Fonts */
+    --roboto: 'Roboto';
+}
