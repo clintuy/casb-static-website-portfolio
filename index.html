@@ -466,20 +466,15 @@
     <script>
         AOS.init();
 
-        var email = document.getElementById("email").value;
-        var name = document.getElementById("name").value;
-        var message = document.getElementById("message").value;
-
         $("#contact").submit(function(e) {
             e.preventDefault();
 
             var $form = $(this);
             $.post($form.attr("action"), $form.serialize()).then(function() {
-                toastr.success('Thank you!', name)
+                toastr.success('Thank you for sending an E-mail!')
 
-                email = document.getElementById("email").value("");
-                name = document.getElementById("name").value("");
-                message = document.getElementById("message").value("");
+                location.reload();
+                return false;
             });
         });
     </script>
