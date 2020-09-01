@@ -1,19 +1,10 @@
 var loader;
 
-function loadNow(opacity) {
-    if (opacity <= 0) {
-        displayContent();
-    } else {
-        loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.05);
-        }, 50);
-    }
-}
+function loadNow() {
 
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('preLoader').style.display = 'none';
+    window.setTimeout(function() {
+        document.getElementById('preLoader').style.display = 'none';
+    }, 500);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
