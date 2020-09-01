@@ -361,13 +361,6 @@
     
 }
 /* End Footer Area */
-#submitForm {
-    color:white;
-}
-
-#submitForm:hover {
-    color:var(--text-color-primary);
-}
 
 /* Media Queries */
 @media only screen and (max-width: 991px) {
